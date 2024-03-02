@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Car Price Checker</h1>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a car...">
+        <div id="carModelsDiv" class="output"></div>
+    </div>
+
+    <div id="carPriceDiv"></div>
+
+    <div id="compareDiv"></div>
+
+    <button id="clearButton" onclick="clearOutputs()">Clear</button>
+    
+    <button id="compareButton" onclick="compareCarPrices()">Compare Prices</button>
+
+    <section id="allCars">
+        <h2>All Cars</h2>
+        <ul>
+            <li class="car-item" data-brand="BMW" data-model="X1">BMW X1</li>
+            <li class="car-item" data-brand="BMW" data-model="X3">BMW X3</li>
+            <li class="car-item" data-brand="BMW" data-model="X5">BMW X5</li>
+            <li class="car-item" data-brand="Ford" data-model="Fiesta">Ford Fiesta</li>
+            <li class="car-item" data-brand="Ford" data-model="Focus">Ford Focus</li>
+            <li class="car-item" data-brand="Ford" data-model="Mustang">Ford Mustang</li>
+            <li class="car-item" data-brand="Toyota" data-model="Camry">Toyota Camry</li>
+            <li class="car-item" data-brand="Toyota" data-model="Corolla">Toyota Corolla</li>
+            <li class="car-item" data-brand="Toyota" data-model="Rav4">Toyota Rav4</li>
+            <li class="car-item" data-brand="Dodge" data-model="Charger">Dodge Charger</li>
+            <li class="car-item" data-brand="Dodge" data-model="Challenger">Dodge Challenger</li>
+            <li class="car-item" data-brand="Dodge" data-model="Durango">Dodge Durango</li>
+            <li class="car-item" data-brand="Volkswagen" data-model="Golf">Volkswagen Golf</li>
+            <li class="car-item" data-brand="Volkswagen" data-model="Jetta">Volkswagen Jetta</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 123-456-7890</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
